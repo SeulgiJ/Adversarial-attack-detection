@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../static/home.css">
+
+<head>
+    <div style="text-align: center;">
+        <h1>Adversarial Attack & Detection</h1>
+        <h4>Team 명랑</h4>
+    </div>
+</head>
+
+<form action="http://127.0.0.1:5000/plot.png" method="post">
+    <div>
+        <label for="file name">File name:</label>
+        <input type="text" id="file_name" name="file_name" />
+    </div>
+    <div>
+        <label for="file path">File path:</label>
+        <textarea id="msg" name="file_path"></textarea>
+    </div>
+    <div>
+        <label for="epsilon">Epsilon:</label>
+        <input type="text" id="epsilon" name="epsilon" />
+    </div>
+
+
+    <div class="button">
+        <button type="submit">Submit</button>
+    </div>
+</form>

@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <img src="{{ url_for('static', filename=input_file) }}" width="500" height="500">
+    <img src="{{ url_for('static', filename=attack_file) }}" width="500" height="500">
+    {% if detection %}
+    <p>adversarial attack detected</p>
+    {% else %}
+    <p>adversarial attack non-detected</p>
+    {% endif %}
+  </body>
+</html>
